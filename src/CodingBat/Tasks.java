@@ -8,22 +8,32 @@ import java.util.ArrayList;
 
 public class Tasks {
     public static void main(String[] args) {
-        int a[] = {1, 4, 1, 4};
-        System.out.println(Arrays.toString(a));
-    }
+        int countzero=0;
+        int countone=0;
+        int nums[]={1,1,0,1,1,1};
 
-    public boolean no14(int[] nums) {
 
-        boolean result=true;
-        for (int i=0;i<nums.length;i++) {
-            if (nums[i] != 1&&nums[i]!=4 ) {
-                result = false;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i]==0&&nums[i + 1]==1) {
+                countone++;
             }
+
         }
-        return result;
-        //salam atam atam
+        System.out.println(countone);
     }
 
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int countzero=0;
+        int countone=0;
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i]==0&&nums[i + 1]==1) {
+                countone++;
+            }
+
+        }
+        return countone;
+    }
 
 
 }
