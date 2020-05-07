@@ -1,13 +1,21 @@
 package Day33ClassAndObject;
 
-public class BankAccountObject {
+public class CapitolOne {
     public static void main(String[] args) {
 
-    BankAccount obj=new BankAccount();
+    BankAccount kenan=new BankAccount();
 
-    obj.accountHolder="Alisa Musayeva";
-    obj.accountNumber="************4176";
-    obj.balance=3500;
+    kenan.accountHolder="Kenan Musayev";
+    kenan.accountNumber="************1364";
+        System.out.println(kenan);
+
+    kenan.checkingBalance();
+    kenan.deposit(10500);
+    kenan.withdraw(5500);
+        System.out.println("====================");
+    kenan.withdraw(5001);
+    kenan.withdraw(350);
+    kenan.checkingBalance();
 
 
     }

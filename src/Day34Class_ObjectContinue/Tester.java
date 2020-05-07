@@ -1,6 +1,6 @@
 package Day34Class_ObjectContinue;
 
-public class BankofAmerica {
+public class Tester {
     String name;
     int employeeID;
     String jobTitle;
@@ -25,6 +25,6 @@ public class BankofAmerica {
     }
 
     public void budget(){
-        
+
     }
 }
