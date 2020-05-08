@@ -1,4 +1,4 @@
-package Day36Static_KeyWord;
+package Day36Static;
 
 public class Rulesforstaticandinstance {
     public static void main(String[] args) {

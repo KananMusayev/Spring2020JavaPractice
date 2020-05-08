@@ -10,16 +10,18 @@ public class ScrumTeam {
     ArrayList<Testers>testerteam=new ArrayList<>();
     ArrayList<Developers>developerteam=new ArrayList<>();
 
-    public void hireTester(){
 
+    public void hireTester(Testers testers){
+        testerteam.add(testers);
     }
-    public void fireTester(){
-
+    public void fireTester(int employeeID){
+        developerteam.removeIf(p->p.employeeID==employeeID);
     }
-    public void hireDeveloper(){
+    public void hireDeveloper(Developers developers){
+        developerteam.add(developers);
     }
-    public void fireDeveloper(){
-
+    public void fireDeveloper(int employeeID){
+        developerteam.removeIf(p->p.employeeID==employeeID);
     }
     public void DailyStandup(){
 
