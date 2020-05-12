@@ -11,7 +11,7 @@ public class humanresorces {
     static Employee employee5=new Employee();
 
 
-    /*static {
+    static {
         employee1.setemployeeinfo("Alisa",1234,536565,"Developer",160000,'f');
         employee2.setemployeeinfo("Kenan",2432,345425,"Father",190000,'m');
         employee3.setemployeeinfo("Esmira",3545,235672,"Mother",200000,'f');
@@ -19,5 +19,5 @@ public class humanresorces {
         employee5.setemployeeinfo("Nicat",8374,326364,"Brother in law",180000,'m');
     }
 
-     */
+
 }

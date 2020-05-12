@@ -32,7 +32,7 @@ public class ConstructorMethod {
         call the corrent class constructor
         3.Constructor call has to be the first statement in constructor
         4.one constructor can call ONLY one constructor
-        5.constructor can not call itself and can not contain itself
+        5.constructor can not call itself
         6.constructor cannot contain itself
 
 
