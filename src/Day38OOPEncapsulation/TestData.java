@@ -7,6 +7,7 @@ public class TestData {
     Name
     ID
      */
+    protected double number=15;//this is for day39 access modifierstestclass
     private String Name="Bekir";
     private int ID=897;
 
