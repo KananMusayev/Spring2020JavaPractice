@@ -12,7 +12,7 @@ public class Device {
     }
 }
 
-class Tv extends Device{
+class   Tv extends Device{
 
     public void watch(){
         System.out.println("i am wathing to my movies at "+brand +" Tv");
