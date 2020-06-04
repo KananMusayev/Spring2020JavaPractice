@@ -6,7 +6,8 @@ public class Catalog {
     public ArrayList<Double> prices = new ArrayList<>();
     public ArrayList<Double> monthlyPayments = new ArrayList<>();
 
-/*
+
+
     public void loadItems() {
         //TODO
 
@@ -92,43 +93,53 @@ public class Catalog {
                     }
                 }
                 return item+"-"+prices.get(num)+"-"+prices.get(num);
-            }else {
+            }
 
-        return null;}
+        return null;
     }
 
 
 
     public ArrayList<String> getItemsLessThanAMonthlyPrice(double price) {
         //LOAD WHOLE CATALOG HERE FIRST
-            loadWholeCatalog();
+        loadWholeCatalog();
         //TODO
-        ArrayList<String > list=new ArrayList<>();
-        boolean a=false;
-for (int i=0;i<monthlyPayments.size();i++){
-    if (monthlyPayments.get(i)<=price){
-        list.add(items.get(i)+"-"+prices.get(i)+"-"+monthlyPayments.get(i));
-        a=true;
-    }
-    if (a=true){
-        return list; }
-    else {
+        ArrayList<String> list = new ArrayList<>();
+        boolean a = false;
+        for (int i = 0; i < monthlyPayments.size(); i++) {
+            if (monthlyPayments.get(i) <= price) {
+                list.add(items.get(i) + "-" + prices.get(i) + "-" + monthlyPayments.get(i));
+                a = true;
+            }}
+            if (a = true) {
+                return list;
+            }
 
 
-        return null;}
-    }
+                return null;
 
-    public void updatePrice(String item,double newPrice) {
+        }
+    /**
+     * Method accepts a item name and updates total Price and monthly payments
+     * for that item in <items>,<prices>,<monthlyPayments> arrayLists
+     * When assigning monthlyPayments do =>  newPrice/12 <= to get monthly payments
+     *
+     * @param item name
+     * @param newPrice
+     */
+
+    public void updatePrice(String item, double newPrice) {
         //LOAD WHOLE CATALOG HERE FIRST
-            loadWholeCatalog();
+        loadWholeCatalog();
         //TODO
-           for (int i=0;i<prices.size();i++){
-               if (items.get(i).equals(item)){
-                   prices.set(i,newPrice/12);
-               }
-           }
-
+        int a =0;
+            for (int i=0;i<items.size();i++){
+                if (items.get(i).equals(item)){
+                    a=i;
+                }
     }
+            prices.set(a,newPrice);
+            monthlyPayments.set(a,newPrice/12);}
 
     /**
      * Method looks for an item in the catalog and removes
@@ -137,19 +148,25 @@ for (int i=0;i<monthlyPayments.size();i++){
      *
      * @param item
      */
-/*
 
 
-    public void deleteItemFromCatalog(String item) {
+    public void deleteItemFromCatalog(String item){
         //LOAD WHOLE CATALOG HERE FIRST
         loadWholeCatalog();
         //TODO
-            int k=items.size();
-            int num=0;
-            for (int i=0;i<items.size();i++){
-                items.removeIf(p->p.equals(item));
-
+        int a=0;
+        for (int i=0;i<items.size();i++){
+            if (items.get(i).equals(item)){
+                a=i;
             }
-    }
- */
+
+        }
+           items.removeIf(p->p.equals(item));
+           prices.remove(a);
+           monthlyPayments.remove(a);
+
+
 }
+
+
+    }
