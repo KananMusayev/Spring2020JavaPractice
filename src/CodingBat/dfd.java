@@ -5,16 +5,28 @@ import java.util.Collections;
 
 public class dfd {
     public static void main(String[] args) {
-
-    int a=5;
-    if(a==5)
-        System.out.println("A");
-        System.out.println("b");
-        System.out.println("CAB");
-        System.out.println("kdjfhsdlf");
-
+        System.out.println(primeNumber(17));
 
     }
 
+    public static boolean primeNumber(int num) {
 
+        boolean result = true;
+
+        for(int i = 2; i <num; i++) {
+
+                if (num%i==0){
+                    result=false;
+                }
+
+        }
+        return result;
+
+
+
+
+
+
+
+    }
 }

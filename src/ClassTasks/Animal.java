@@ -1,7 +1,12 @@
 package ClassTasks;
 
 public class Animal {
+
+
     public static void main(String[] args) {
+
+
+
         String str = "AAAAABBBCCCDEFJ";
 
         String result="";
