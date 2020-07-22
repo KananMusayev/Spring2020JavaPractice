@@ -8,6 +8,7 @@ public class EsebiRamil {
         for (char i='A';i<='Z';i++){
             result1+=i;
         }
+        System.out.println(result1);
         for (char i='a';i<='z';i++){
             result2+=i;
         }

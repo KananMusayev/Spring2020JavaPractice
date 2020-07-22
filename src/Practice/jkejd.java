@@ -1,6 +1,9 @@
 package Practice;
 
-public class jkejd {
+public interface jkejd {
+
+
+
 
 
 }

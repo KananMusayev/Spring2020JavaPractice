@@ -30,7 +30,9 @@ public class Rephlit51 {
             totaltopay+=tip;}
         double totalperperson = totaltopay/numberofpeople;
         double tipperperson = tip/numberofpeople;
-        String a = "&&&&";
+        String a = "&" +
+                "" +
+                "&&&";
         String b = "&&&&&";
         String c = "&&&";
         String d = "&&";
